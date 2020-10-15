@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\ARdesk\Desktop\Programming\Practice\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(10,18): warning C4101: k: неиспользованная локальная переменная
+C:\Users\ARdesk\Desktop\Programming\Practice\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(9,15): warning C4101: i: неиспользованная локальная переменная
+  ConsoleApplication1.vcxproj -> C:\Users\ARdesk\Desktop\Programming\Practice\ConsoleApplication1\Debug\ConsoleApplication1.exe

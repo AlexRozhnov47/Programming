@@ -1,0 +1,6 @@
+﻿  ConsoleApplication5.cpp
+C:\Users\ARdesk\Desktop\Programming\Practice\Rechange of meanings\ConsoleApplication5\ConsoleApplication5.cpp(12,7): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\ARdesk\Desktop\Programming\Practice\Rechange of meanings\ConsoleApplication5\ConsoleApplication5.cpp(13,7): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\ARdesk\Desktop\Programming\Practice\Rechange of meanings\ConsoleApplication5\ConsoleApplication5.cpp(14,7): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\ARdesk\Desktop\Programming\Practice\Rechange of meanings\ConsoleApplication5\ConsoleApplication5.cpp(15,7): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+  ConsoleApplication5.vcxproj -> C:\Users\ARdesk\Desktop\Programming\Practice\Rechange of meanings\Debug\ConsoleApplication5.exe
