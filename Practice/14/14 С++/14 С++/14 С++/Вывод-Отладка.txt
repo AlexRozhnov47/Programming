@@ -1,0 +1,14 @@
+﻿"14 С++.exe" (Win32). Загружено "C:\Users\ARdesk\Desktop\Programming\Practice\14\14 С++\14 С++\Debug\14 С++.exe". Символы загружены.
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\ntdll.dll". 
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\kernel32.dll". 
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\KernelBase.dll". 
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\msvcp140d.dll". 
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\vcruntime140d.dll". 
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\ucrtbased.dll". 
+Поток 0x1c38 завершился с кодом 0 (0x0).
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\kernel.appcore.dll". 
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\msvcrt.dll". 
+"14 С++.exe" (Win32). Загружено "C:\Windows\SysWOW64\rpcrt4.dll". 
+Поток 0x453c завершился с кодом 0 (0x0).
+Поток 0x26e8 завершился с кодом 0 (0x0).
+Программа "[17216] 14 С++.exe" завершилась с кодом 0 (0x0).

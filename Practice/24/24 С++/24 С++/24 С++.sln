@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24 С++", "24 С++\24 С++.vcxproj", "{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		json|x64 = json|x64
+		json|x86 = json|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Debug|x64.ActiveCfg = Debug|x64
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Debug|x64.Build.0 = Debug|x64
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Debug|x86.Build.0 = Debug|Win32
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.json|x64.ActiveCfg = json|x64
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.json|x64.Build.0 = json|x64
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.json|x86.ActiveCfg = Debug|Win32
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.json|x86.Build.0 = Debug|Win32
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Release|x64.ActiveCfg = Release|x64
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Release|x64.Build.0 = Release|x64
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Release|x86.ActiveCfg = Release|Win32
+		{FCB18DF8-96B5-48BD-81CB-9851818D9CB8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC6D811F-11B3-4342-9A52-4625CD9B7665}
+	EndGlobalSection
+EndGlobal
