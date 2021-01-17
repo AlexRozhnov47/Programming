@@ -1,4 +1,51 @@
-﻿#include <iostream>
+<p align="center">МИНИСТЕРСТВО НАУКИ  И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ<br>
+Федеральное государственное автономное образовательное учреждение высшего образования<br>
+"КРЫМСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ им. В. И. ВЕРНАДСКОГО"<br>
+ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ<br>
+Кафедра компьютерной инженерии и моделирования</p>
+<br>
+<<<<<<< HEAD
+<h3 align="center">Отчёт по лабораторной работе № 2<br> по дисциплине "Программирование"</h3>
+<br><br>
+<p>студента 1 курса группы ИВТ-б-о-202(2)<br>
+Рожнова Александра Вячеславовича<br>
+направления подготовки 09.03.01 "Информатика и вычислительная техника"</p>
+=======
+<h3 align="center">Отчёт по лабораторной работе № 2X<br> по дисциплине "Программирование"</h3>
+<br><br>
+<p>студента 1 курса группы XXX-б-о-20X(X)<br>
+Фамилия Имя Отчество<br>
+направления подготовки 09.03.0X "Название направления подготовки"</p>
+>>>>>>> d92fc76f9dbe538603ac9ce7dbb4c932a85dd9f5
+<br><br>
+<table>
+<tr><td>Научный руководитель<br> старший преподаватель кафедры<br> компьютерной инженерии и моделирования</td>
+<td>(оценка)</td>
+<td>Чабанов В.В.</td>
+</tr>
+</table>
+<br><br>
+<p align="center">Симферополь, 2020</p>
+<hr>
+
+<<<<<<< HEAD
+<h3 align="left">Постнановка задачи<br><h3>
+
+</h3>
+<p align="left">Разработать приложение для написания навыков в Яндекс. Диалогах и перевод результата из Json в Exel формат.  В качестве источника данных для работы с навыком используйте: ngrok.exe, Яндекс. Диалоги. В состав сервиса входит: серверное приложение на языке С++ и клиентское приложение на языке Python.<br>
+<p align="left">Серверное приложение (далее Сервер) предназначенное для обработки навыка работы с сервисом "Яндекс.Диалоги". Сервер должен обеспечивать возможность получения данных в формате JSON и обрабоки информации в виде webhooks.<br>
+<p align="left">Клиентское приложение должно получать запрос с сервера Яндекс.Диалогов по требованию пользователя.<br>
+<h3 align="left">Ход работы</h3>
+<h2 align="center">Пункт 1. Регистрация в сервисе Яндекс Диалоги</h2>
+<p align="left">По первому заданию была проведена регистрация, в результате которой был создан API ключ для навыка, атакже была проведена регистрация на серверах Webhooks, демонстрируемый далее.</p>
+<p>3794cff4253f41c9f6da24d524a9bd0e</p>
+<p>92bb6d80-4169-45ea-963d-a1918ba68dbd@email.webhook.site</p>
+<p>https://webhook.site/92bb6d80-4169-45ea-963d-a1918ba68dbd</p>
+<h2 align="center">Пункт 2. Написание первой части серверного приложения на С++.</h2>
+<p align="left">После был использован код для написания первой части программы, используемый в основном тексте лабораторной работы. </p>
+<'''C++>
+
+#include <iostream>
 #include <string>
 #include <fstream>
 #include <vector>
@@ -289,11 +336,11 @@ void findAndRepl(std::string& data, std::string toSearch, std::string replStr) {
 void check_conf() {
 	std::string webhooks_file_name = "webhook.json";
 	std::ifstream webhooks_file(webhooks_file_name);
-	std::cout << "Попытка открыть файл...\n";
+	std::cout << "Opening attempt file...\n";
 	if (webhooks_file.is_open())
 	{
 		int i = 0;
-		std::cout << "Открыл!\n";
+		std::cout << "Released!\n";
 		json j = json::parse(webhooks_file);
 
 		for (int i = 0; i < j["webhooks"].size(); i++) {
@@ -302,7 +349,7 @@ void check_conf() {
 	}
 	else
 	{
-		std::cout << "Не получилось, создаю новый...\n";
+		std::cout << "Failed,tried again...\n";
 		std::ofstream webhooks_file(webhooks_file_name);
 		std::string config = R"(
 			{
@@ -424,3 +471,65 @@ int main() {
 	std::cout << "Start server... OK\n";
 	svr.listen("localhost", 1234);
 }
+
+
+'''</p>
+<h2 align="center">Пункт 4. Создание макета для приложения на Python.</h2>
+<p align="left">После того,как было создано приложение на C++, было разработано приложение и на Python, которое обязуется принимать значения и записывать их в таблицу. </p>  
+<'''C++>
+       from flask import Flask, request
+import json
+import openpyxl
+
+app = Flask(__name__)
+
+def reload_data():
+    answer = requests.get('http://localhost:5000/raw').content.decode("utf8")
+    if answer:
+        info = json.loads(answer)
+    else:
+        print('Error')
+
+@app.route('/', methods=['POST', 'GET'])
+def index():
+    if request.method == 'POST':
+        return "Это POST запрос"
+    if request.method == 'GET':
+        return "Это GET запрос"
+ 
+if __name__ == "__main__":
+    app.run()
+
+    with open ('webhook.json') as file:
+        data = json.load(file)
+        for webhook in data ['webhook']:
+            ID = webhook['ID']
+            UserID = webhook['User ID']
+            Datetime = webhook['Datetime']
+            Item = webhook['Item']
+            Price = webhook['Price']
+    print (data['webhook reciecve'])
+book = openyxl.Workbook()
+sheet = book.active
+sheet['A2'] = 'ID'
+sheet['B2'] = 'User ID'
+sheet['C2'] = 'Datetime'
+sheet['D2'] = 'Item'
+sheet['E2'] = 'Price'
+
+row = 2 
+for movie in data['webhook']:
+    sheet[row][0] = webhook['ID']
+    sheet[row][1] = webhook['User ID']
+    sheet[row][2] = webhook['Datetime']
+    sheet[row][3] = webhook['Item']
+    sheet[row][4] = webhook['Price']
+    row += 1
+
+book.save("list.xlsx")
+book.close()
+'''</p>
+<img src="file///C:Users/ARdesk/Desktop/Programming/Practice/laboratory 1/samplle widjet.png" />
+<h2 align="center">Пункт 5. Вывод из работы.</h2>
+<p align="left">За время написания работы была проведена попытка научиться писать алгоритмы для сервиса Яндекс.Диалоги. Были выполнены почти все пункты работы, однако при написании каждого пункта не довел задание до конца . </p>
+<br>
