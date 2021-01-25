@@ -245,7 +245,7 @@ void gen_response(const Request& req, Response& res) {
 		res.set_content(str1, "text/json; charset=UTF-8");
 
 	}
-	else if (yandex["request"]["nlu"]["tokens"][0] == u8"что добавить")
+	else if (yandex["request"]["nlu"]["tokens"][0] == u8"огурцы")
 		{ 
 			res.set_content(str2, "text/json; charset=UTF-8");
 
