@@ -266,6 +266,9 @@ mainloop()
 </p>
 <h2 align="center">Пункт 5. Создание макета для приложения на Python.</h2>
 <p align="left">После того,как приложение на Python были написаны, был воссоздан  шаблон виджета на основве образца, представленного в тексте лабораторной работы. </p>  
+
+![](./samplle widjet.png)
+
 <img src="file///C:Users/ARdesk/Desktop/Programming/Practice/laboratory 1/samplle widjet.png" />
 <h2 align="center">Пункт 6. Вывод из работы.</h2>
 =======
