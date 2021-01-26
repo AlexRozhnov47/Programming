@@ -44,7 +44,7 @@
 <p>{"coord":{"lon":34.11,"lat":44.96},"weather":[{"id":803,"main":"Clouds","description":"brok0en clouds","icon":"04d"}],"base":"stations","main":{"temp":276.72,"feels_like":271.5,"temp_min":276.72,"temp_max":276.72,"pressure":1031,"humidity":79,"sea_level":1031,"grnd_level":1001},"visibility":10000,"wind":{"speed":4.68,"deg":71},"clouds":{"all":61},"dt":1605764600,"sys":{"country":"UA","sunrise":1605761214,"sunset":1605795086},"timezone":10800,"id":693805,"name":"Simferopol","cod":200}</p>
 <h2 align="center">Пункт 3. Написание первой части серверного приложения на С++.</h2>
 <p align="left">После был использован код для написания первой части программы, используемый в основном тексте лабораторной работы. </p>
-<'''C++>
+```C++
 
 #include <iostream>
 #include <fstream>
@@ -212,11 +212,11 @@ int main() {
 	std::cout << "Start server... OK\n";
 	svr.listen("localhost", 3000);
 }
-'''
+```
 </p>
 <h2 align="center">Пункт 4. Написание второй части серверного приложения на python.</h2>
 <p align="left">После был использован код для написания второй части программы, используемый в основном тексте лабораторной работы. </p>
-<'''python
+```python
 
 print s;
 from tkinter import *
@@ -265,7 +265,7 @@ reload_data()
 mainloop()
 
 
-'''</p>
+```</p>
 <h2 align="center">Пункт 5. Создание макета для приложения на Python.</h2>
 <p align="left">После того,как приложение на Python были написаны, был воссоздан  шаблон виджета на основве образца, представленного в тексте лабораторной работы. </p>  
 <img src="file///C:Users/ARdesk/Desktop/Programming/Practice/laboratory 1/samplle widjet.png" />
