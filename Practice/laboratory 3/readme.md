@@ -300,6 +300,7 @@ root.mainloop()
 ``` </p>
 
 ![]("./Screenshotstart.png")
+
 ![]("./Screenshotprocess.png")
 
 <h2 align="center">Пункт 3. Вывод из работы.</h2>
