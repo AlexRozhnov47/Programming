@@ -31,7 +31,7 @@
 <h2 align="center">Пункт 1. Написание программы на Python.</h2>
 <p align="left">После был использован код для написания первой части программы, используемый в основном тексте лабораторной работы. </p>
 
-```Python
+```python
 
 from tkinter import*
 from tkinter import ttk
@@ -299,8 +299,8 @@ root.mainloop()
 
 ``` </p>
 
-![]("./Screenshotstart.png)
-![]("./Screenshotprocess.png)
+![]("./Screenshotstart.png")
+![]("./Screenshotprocess.png")
 
 <h2 align="center">Пункт 3. Вывод из работы.</h2>
 <p align="left">За время написания работы была проведена попытка научиться писать алгоритмы для разработки простых игр на снове языка python при помощи модуля Tkinter. Были выполнены все пункты работы . </p>
