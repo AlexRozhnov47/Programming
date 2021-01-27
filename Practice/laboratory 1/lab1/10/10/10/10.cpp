@@ -144,7 +144,7 @@ void response_collector(const Request& req, Response& res) {
 	while (check == 1) {
 		if (i == -1) {
 			r = weather_call();
-			int i = time_syncronising(time);
+		    i = time_syncronising(time);
 		}
 		else {
 			check = 0;
