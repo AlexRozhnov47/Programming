@@ -36,7 +36,7 @@
 <h2 align="center">Пункт 2. Написание первой части серверного приложения на С++.</h2>
 <p align="left">После был использован код для написания первой части программы, используемый в основном тексте лабораторной работы. </p>
 
-``C++
+```C++
 
 #include <iostream>
 #include <string>
@@ -463,12 +463,11 @@ int main() {
 	std::cout << "Start server... OK\n";
 	svr.listen("localhost", 1234);
 }
-```
 
 <h2 align="center">Пункт 4. Создание макета для приложения на Python.</h2>
 <p align="left">После того,как было создано приложение на C++, было разработано приложение и на Python, которое обязуется принимать значения и записывать их в таблицу. </p>  
 
-```Python
+```python
        from flask import Flask, request
 import json
 import openpyxl
