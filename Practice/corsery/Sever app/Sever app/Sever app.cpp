@@ -3,8 +3,18 @@
 
 #include <conio.h>
 #include <stdlib.h>
+#include <iostream>
 #include <stdio.h>
 #include <winsock2.h>
+
+#define MAX_PACKET_SIZE    0x10000
+#define SIO_RCVALL         0x98000001
+// Буфер для приёма данных
+char Buffer[MAX_PACKET_SIZE]; // 64 Kb
+
+using namespace std;
+
+//Структура заголовка IP-пакета
 
 #define MAX_PACKET_SIZE    0x10000
 #define SIO_RCVALL         0x98000001
@@ -34,7 +44,7 @@ char ds[15];
 char dso[5];
 unsigned short lowbyte;
 unsigned short hibyte;
-using namespace std;
+
 int main()
 {
 	WSADATA     wsadata;   // Инициализация WinSock.
@@ -69,18 +79,18 @@ int main()
 			IPHeader* hdr = (IPHeader*)Buffer;
 			//Начинаем разбор пакета...
 
-			strcpy(src, "Пакет: ");
-			//CharToOem(src, dest);
+			strcpy(src, "pack: ");
+			CharToOem(src, dest);
 			printf(dest);
 			// Преобразуем в понятный вид адрес отправителя.
 			printf("From ");
 			sa1.s_addr = hdr->iph_src;
-			//printf(inet_ntop(sa1));
+			printf(inet_ntoa(sa1));
 
 			// Преобразуем в понятный вид адрес получателя.
 			printf(" To ");
 			sa1.s_addr = hdr->iph_dest;
-			//printf(inet_ntop(sa1));
+			printf(inet_ntoa(sa1));
 
 			// Вычисляем протокол. Полный список этих констант
 			// содержится в файле winsock2.h
@@ -95,13 +105,13 @@ int main()
 			lowbyte = hdr->iph_length >> 8;
 			hibyte = hdr->iph_length << 8;
 			hibyte = hibyte + lowbyte;
-			//printf("%s", itoa(hibyte, ds, 10));
+			printf("%s", itoa(hibyte, ds, 10));
 
 			// Вычисляем время жизни пакета.
-			//printf("%s", itoa(hibyte, ds, 10));
-			//printf(" TTL:%s", itoa(hdr->iph_ttl, ds, 10));
+			printf("%s", itoa(hibyte, ds, 10));
+			printf(" TTL:%s", itoa(hdr->iph_ttl, ds, 10));
 
-			//cout << endl;
+			cout << endl;
 		}
 	}
 
