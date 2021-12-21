@@ -1,0 +1,18 @@
+private List<Point> _points = new List<Point>();
+public void drawBall(PaintEventArgs e)
+{
+    _points.Add(new Point(xx, yy));
+    if (_points.Count >= 3)
+    {
+        e.Graphics.DrawCurve(Pens.Red, _points.ToArray());
+    }
+    e.Graphics.FillEllipse(Brushes.White, xx - 10, yy - 10, 20, 20);
+}
+
+private void Start_Click(object sender, EventArgs e)
+{
+    if (SkorostBox.Text != "" && YgolBox.Text != "")
+    {
+        _points.Clear();
+        a = Convert.ToDouble(YgolBox.Text);
+        if (a <= 90)

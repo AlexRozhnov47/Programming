@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon />
+    <Win32Resource>C:\Users\ARdesk\Desktop\Programming\Practice\С#\1L\DataFile.txt</Win32Resource>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="DataFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

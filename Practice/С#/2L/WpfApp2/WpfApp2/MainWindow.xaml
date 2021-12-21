@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="convertButton" Content="Расчитай!" HorizontalAlignment="Left" Margin="138,0,12,0" VerticalAlignment="Top" Width="75" Height="28" Click="convertButton_Click"/>
+        <Label x:Name="binaryLabel" Content="0" HorizontalAlignment="Left" Margin="12,24,41,0" VerticalAlignment="Top" Width="120" Height="28"/>
+        <TextBox x:Name="inputTextBox" HorizontalAlignment="Left" Margin="12,0,12,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="28"/>
+        <Label x:Name="HexLabel" Content="0" HorizontalAlignment="Left" Margin="12,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="OctLabel" Content="0" HorizontalAlignment="Left" Margin="12,83,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
