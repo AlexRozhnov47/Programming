@@ -3,19 +3,19 @@ from pygame import *
 from math import *
 
 WIN_WIDTH = 800
-WIN_HEIGHT = 640
-PLANET_WIDTH = 20
-PLANET_HEIGHT = 20
+WIN_HEIGHT = 800
+SAT_WIDTH = 2
+SAT_HEIGHT = 2
 DISPLAY = (WIN_WIDTH, WIN_HEIGHT)
 SPACE_COLOR = "#000022"
-SUN_COLOR = "yellow"
-PLANET_COLOR = "blue"
+EARTH_COLOR = "blue"
+SAT_COLOR = "grey"
 
-#Sun position
+#Earth position
 X0 = WIN_WIDTH // 2
 Y0 = WIN_HEIGHT // 2
-#Sun mass
-M0 = 5000
+#Sat mass
+M0 = 2600
 #Stop conditions
 CRASH_DIST = 10
 OUT_DIST = 1000
@@ -24,31 +24,31 @@ def main():
     #PyGame init
     pygame.init()
     screen = pygame.display.set_mode(DISPLAY)
-    pygame.display.set_caption("Solar Mechanics v0.1")
+    pygame.display.set_caption("Satteite spin mechanics")
     
     #Space init
     bg = Surface((WIN_WIDTH,WIN_HEIGHT))
     bg.fill(Color(SPACE_COLOR))     
-    draw.circle (bg, Color(SUN_COLOR), (X0, Y0), 10)
+    draw.circle (bg, Color(EARTH_COLOR), (X0, Y0), 100)
                     
     #Timer init                     
     timer = pygame.time.Clock()
     
-    #Planet init
-    planet = Surface((PLANET_WIDTH, PLANET_HEIGHT))
-    planet.fill(Color(SPACE_COLOR))
-    draw.circle (planet,
-        Color(PLANET_COLOR),
-        (PLANET_WIDTH // 2, PLANET_HEIGHT // 2),
+    #Sat init
+    sattelite = Surface((SAT_WIDTH, SAT_HEIGHT))
+    sattelite.fill(Color(SPACE_COLOR))
+    draw.circle (sattelite,
+        Color(SAT_COLOR),
+        (SAT_WIDTH // 2, SAT_HEIGHT // 2),
         5)
 
-    #Planet to Sun distance
+    #Sattelite to Earth distance
     r = 0.0
-    #Initial planet pos, speed and accel
-    x = 100.0
-    y = 290.0
-    vx = 0.1
-    vy = 1.5
+    #Initial sat pos, speed and accel
+    x = WIN_WIDTH // 3
+    y = WIN_HEIGHT // 3
+    vx = 1.001
+    vy = 1.505
     ax = 0.0
     ay = 0.0
 
@@ -62,8 +62,8 @@ def main():
 
         r = sqrt((x - X0)**2 + (y - Y0)**2)
         
-        ax = M0 * (X0 - x) / r**3
-        ay = M0 * (Y0 - y) / r**3
+        ax = M0 * (X0 - x) / r**3.1
+        ay = M0 * (Y0 - y) / r**3.1
 
         #New spped based on accel
         vx += ax
@@ -74,7 +74,7 @@ def main():
         y += vy
 
         screen.blit(bg, (0, 0))      
-        screen.blit(planet, (int(x), int(y)))
+        screen.blit(sattelite, (int(x), int(y)))
         pygame.display.update()     
 
         if r < CRASH_DIST:
