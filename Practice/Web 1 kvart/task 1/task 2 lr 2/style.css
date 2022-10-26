@@ -1,0 +1,20 @@
+
+
+ol li{
+    list-style-type: none;
+    border: blue solid 1px;
+    width: 200px;
+margin-top: 5px;
+padding: 5px;}
+ol li:hover{
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+ol li:hover ~ li:nth-last-child(n+2){
+    background-color: red;
+    color: white}
+    /*.block:hover+li{
+background:red;}
+
+  

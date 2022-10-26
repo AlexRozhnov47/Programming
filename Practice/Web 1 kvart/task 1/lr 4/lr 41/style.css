@@ -1,0 +1,157 @@
+@font-face{
+   font-family: FontAwesome; 
+   font-style: normal;
+ font-weight: 400;
+   src:local('FontAwesome')
+    url(C:\Users\ARdesk\Desktop\C++\task1\lr4\fontawesome.otf);
+}
+
+* { top: 0;
+    display: inline-block;
+    padding-bottom: 1px;
+     
+ }
+
+ .product-item{
+    padding: 25px;
+    margin-left: 0 auto;
+    position:static;
+    border: 1px solid #eee;
+    background: white;
+    font-family: "Open Sans";
+    overflow: hidden;
+    transition: .4s linear;
+ }
+ 
+ .product-img {
+    transition: 1s ease-in-out;
+    width:10em;
+    
+    /*margin-right: 1em;*/
+ }
+ .product-img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+ }
+ .product-img img {
+    position: relative;
+    display: inline-table;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+
+ }
+ .product-list {
+    margin-top: 15px;
+ }
+ .product-list h3 {
+   font-weight: 700;
+   color: #497DDD;
+   margin: 0;
+   text-decoration: underline;
+   text-transform: uppercase;
+   white-space: pre-wrap;
+   overflow: hidden;
+   font-size: 14px;
+   line-height: 2;
+}
+ .product-list h3:visited {
+   color: #EF7D55;
+ }
+ .price {
+    color: #E34D38;
+    display: block;
+    margin-bottom: 2px;
+ }
+ .stars {
+   content: '★';
+    height: 14px;
+    line-height: 14px;
+    margin: 7px 0;
+    
+ }
+ .stars:before {
+    content: '★★★★★';
+    color: #EFB71C;
+    font-size: 14px;
+    font-family: FontAwesome;
+ }
+ .actions {
+    border-top: 1px solid #eee;
+    padding-top: 4px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+ }
+ .actions:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+ .add-to-cart, .add-to-links {
+    display:inline-block;
+ }
+ .cart-button {
+    text-decoration: none;
+    color: #8C877C;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    transition: .4s linear;
+ }
+ .cart-button:before {
+    content: "\F180";
+    font-family: FontAwesome;
+    margin-right: 10px;
+ }
+ .add-to-cart:hover .cart-button, .wishlist:hover, .compare:hover {
+    color: #E34D38;
+ }
+ .wishlist, .compare {
+    color: #8C877C;
+    padding-left: 20px;
+    transition: .4s linear;
+ }
+ .wishlist:after, .compare:after {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 13px;
+ }
+ .wishlist:after {
+    content: "\f004";
+ }
+ .compare:after {
+    content: "\f079";
+ }
+ .definition p{
+    
+    display:inline-block; 
+    overflow: hidden;
+    white-space: pre-wrap;
+    transition: .4s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50%;
+    width: 200px;
+    
+    word-break: break-all;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+
+ }
+
+
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 4px;
+}

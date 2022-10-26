@@ -1,0 +1,14 @@
+body {
+    margin: 20px;
+          
+  }
+.block:hover {
+    background: green;
+  }
+  
+.block:hover+li+li {
+    background: blue;
+}
+  .block:hover ~ li:nth-last-child(n+2) {
+    background: red;
+  }

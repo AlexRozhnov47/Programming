@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout-buttons">
+    <span class="active icon icon-list"></span>
+    <span class="icon icon-table"></span>
+  </div>
+        
+      </div>
+  <div class="product-wrapper">
+    <div class="product-item">
+      <div class="product-img">
+        <a href="">
+          <img src="C:\Users\ARdesk\Downloads\btr-82a-bronya-btr.jpg">
+        </a>
+      </div>
+      <div class="product-list">
+        <h3 href$="">Боевая машина пехоты БМП-3. </h3>
+        <div class="stars"></div>
+        <span class="price">₽ 799999</span>
+        <div class="actions">
+          <div class="add-to-cart">
+            <a href="" class="cart-button">В корзину</a>
+          </div>
+          <div class="add-to-links">
+            <a href="" class="wishlist"></a>
+            <a href="" class="compare"></a>
+          </div>
+          </div>
+        </div>
+      <div class="definition"><p>Не бит, не крашен. Пробег 50000 километров. Двигатель заменен, Приборная панель в идеальном состоянии</p></div>
+      </div></div>
+        <div class="product-wrapper">
+        <div class="product-item">
+          <div class="product-img">
+            <a href="">
+              <img src="C:\Users\ARdesk\Downloads\stin-b-180-big-1.jpg">
+            </a>
+          </div>
+          <div class="product-list">
+            <h3 href$="">Бетономешалка. Мешает Бетон, бригада рабочих, сьедает Роллтон. </h3>
+            <div class="stars"></div>
+            <span class="price">₽ 799999</span>
+            <div class="actions">
+              <div class="add-to-cart">
+                <a href="" class="cart-button">В корзину</a>
+              </div>
+              <div class="add-to-links">
+                <a href="" class="wishlist"></a>
+                <a href="" class="compare"></a>
+              </div>
+              </div>
+            </div>
+          <div class="definition"><p>Был использован на протяжении 5 лет, был пару раз в ремонте. Доработан при помощи деталей из Европы</p></div>
+          </div></div>
+          <div class="product-wrapper">
+          <div class="product-item">
+            <div class="product-img">
+              <a href="">
+                <img src="C:\Users\ARdesk\Downloads\btr-82a-bronya-btr.jpg">
+              </a>
+            </div>
+            <div class="product-list">
+              <h3 href$="">Боевая машина пехоты БМП-3. </h3>
+              <div class="stars"></div>
+              <span class="price">₽ 799999</span>
+              <div class="actions">
+                <div class="add-to-cart">
+                  <a href="" class="cart-button">В корзину</a>
+                </div>
+                <div class="add-to-links">
+                  <a href="" class="wishlist"></a>
+                  <a href="" class="compare"></a>
+                </div>
+                </div>
+              </div>
+            <div class="definition"><p>Не бит, не крашен. Пробег 50000 километров. Двигатель заменен, Приборная панель в идеальном состоянии</p></div>
+            </div></div>
+            <div class="product-wrapper">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="">
+                  <img src="C:\Users\ARdesk\Downloads\btr-82a-bronya-btr.jpg">
+                </a>
+              </div>
+              <div class="product-list">
+                <h3 href$="">Боевая машина пехоты БМП-3. </h3>
+                <div class="stars"></div>
+                <span class="price">₽ 799999</span>
+                <div class="actions">
+                  <div class="add-to-cart">
+                    <a href="" class="cart-button">В корзину</a>
+                  </div>
+                  <div class="add-to-links">
+                    <a href="" class="wishlist"></a>
+                    <a href="" class="compare"></a>
+                  </div>
+                  </div>
+                </div>
+              <div class="definition"><p>Не бит, не крашен. Пробег 50000 километров. Двигатель заменен, Приборная панель в идеальном состоянии</p></div>
+              </div></div>
+              <div class="product-wrapper">
+              <div class="product-item">
+                <div class="product-img">
+                  <a href="">
+                    <img src="C:\Users\ARdesk\Downloads\btr-82a-bronya-btr.jpg">
+                  </a>
+                </div>
+                <div class="product-list">
+                  <h3 href$="">Боевая машина пехоты БМП-3. </h3>
+                  <div class="stars"></div>
+                  <span class="price">₽ 799999</span>
+                  <div class="actions">
+                    <div class="add-to-cart">
+                      <a href="" class="cart-button">В корзину</a>
+                    </div>
+                    <div class="add-to-links">
+                      <a href="" class="wishlist"></a>
+                      <a href="" class="compare"></a>
+                    </div>
+                    </div>
+                  </div>
+                <div class="definition"><p>Не бит, не крашен. Пробег 50000 километров. Двигатель заменен, Приборная панель в идеальном состоянии</p></div>
+                </div></div>     
+                <div class="layout-buttons">
+                  <span class="active icon icon-list"></span>
+                  <span class="icon icon-table"></span>
+                </div>     
+</body>
+</html>  

@@ -1,0 +1,24 @@
+body {
+    margin: 20px;
+  }
+  
+.hello p.test{}/*task 3*/
+
+p.test,hello{}/*task 4*/
+
+p>a, a.test{}/*task 5*/ /*!!!!!!*/
+
+#test b~i{
+    color:green;
+}/*task 6*/
+li > b{
+color: red;}/*task 7*/ /*!!!!!*/
+h2.header {
+ color: red;}    
+h3.header {
+color: blue;}/*task 8*/
+#test h2~p{}/*task 9*/
+p * i{
+    color:blue
+}/*task 10*/ /*!!!*/
+p[title*= "Привет"]{}/*task 11*/ /*!!!!*/
